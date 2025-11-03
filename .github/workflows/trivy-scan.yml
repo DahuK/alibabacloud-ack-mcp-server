@@ -30,7 +30,7 @@ jobs:
           fetch-depth: 0
 
       - name: Build Docker Image (Example - replace with your actual build steps)
-        run: docker build -t alibabacloud-ack-mcp-server:1.0 ./deploy # Replace with your image build command
+        run: docker build -t alibabacloud-ack-mcp-server:1.0 . -f ./deploy/Dockerfile # Replace with your image build command
 
       - name: Run Trivy vulnerability scanner on Docker image
         uses: aquasecurity/trivy-action@master
