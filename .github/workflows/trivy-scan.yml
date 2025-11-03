@@ -43,6 +43,6 @@ jobs:
           exit-code: '0' # Temporarily set to 0 to see vulnerability status
 
       - name: Upload Trivy scan results to GitHub Security tab
-        uses: github/codeql-action/upload-sarif@v5
+        uses: github/codeql-action/upload-sarif@v4
         with:
           sarif_file: 'trivy-results.sarif'
